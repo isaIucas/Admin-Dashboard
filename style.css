@@ -1,0 +1,213 @@
+html,body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-container{
+    min-height: 100vh;
+    min-width: 100vw;
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.side-bar{
+    grid-row:1/3;
+    background-color: #60a5fa;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:40px;
+    padding:20px;
+}
+    .logo{
+    font-weight: 800;
+    display:flex;
+    align-items: center;
+    }
+
+    .logo > img{
+        height: 30px;
+    }
+
+    ul,li{
+        list-style-type: none;
+        padding:0;
+        margin-bottom:10px;
+        gap:15px;
+    }
+
+    li{
+        display:flex;
+        align-items:center;
+
+    }
+
+    li > img {
+        height:20px;
+    }
+
+.header{
+    grid-column: 2/3;
+    background-color: white;
+    padding:15px;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    box-shadow:5px 5px 5px lightgrey;
+}
+    .header-top{
+        display:flex;
+        gap:5px;
+        align-items:center;
+    }
+        .search{
+            border:none;
+            background-color: white;
+        }
+        .search-bar{
+            background-color: #e4e4e7;
+            border:none;
+            border-radius: 25px;
+            width:400px;
+            height:25px;
+        }
+        .bell{
+            margin-left:auto;
+            margin-right:10px;
+        }
+        .profile-pic-small{
+            height:30px;
+            margin-right:10px;
+            border-radius: 50%;
+        }
+
+        .name{
+            font-weight: 600;
+        }
+    .header-bottom{
+        display:flex;
+    }
+        h5{
+            margin:0;
+        }
+        .name-big{
+            
+            font-weight: 600;
+            margin-left:10px;
+        }
+        .profile-pic-big{
+            height:50px;
+            border-radius: 50%;
+
+        }
+        .buttons{
+            display:flex;
+            gap:20px;
+            margin-left:auto;
+        }
+        .button{
+            color:white;
+            font-weight: 500;
+            width:70px;
+            height:25px;
+            border-radius: 15px;
+            border:none;
+            background: #60a5fa;
+        }
+        .button2group{
+            margin-top:auto;
+        }
+.content{
+    grid-column: 2/3;
+    background-color: #e4e4e7 ;
+    display:grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 50px 1fr 50px 1fr;
+    padding: 20px;
+}
+    .title{
+        margin-top:25px;
+        font-weight: 500;
+    }
+
+    .your-projects{
+        grid-row:2/5;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:20px;
+        margin-right:20px;
+    }
+        .card{
+            background-color: white;
+            padding: 20px;
+            border-radius:10px;
+            font-weight:500;
+            display:flex;
+            flex-direction:column;
+            border-left: 5px solid orange;
+            box-shadow:  5px 5px 5px lightgrey;
+        }
+            p{
+                font-weight:normal;
+                margin:0;
+                color:grey;
+            }
+
+            .button2group{
+                display:flex;
+                margin-left:auto;
+            }
+            .button2{
+                
+                border:none;
+                background-color:white;
+        }
+    .announcements{
+        grid-row:2/3;
+        background-color: white;
+        border-radius: 15px;
+        padding:30px;
+        display:flex;
+        flex-direction: column;
+        gap:20px;
+        box-shadow:  5px 5px 5px lightgrey;
+
+    }
+        .notice{
+            font-size: small;
+            font-weight: 500;
+
+        }
+        
+        .middle{
+            border-top: 1px solid grey;
+            padding-top: 20px;
+
+            border-bottom: 1px solid grey;
+            padding-bottom: 20px;
+
+
+        }
+
+
+    .trending{
+        grid-column:2/3;
+        grid-row:4/5;
+        background-color: white;
+        border-radius: 15px;
+        padding:30px;
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        box-shadow:  5px 5px 5px lightgrey;
+
+    }
+    .trend{
+        display:flex;
+    }
+
+
